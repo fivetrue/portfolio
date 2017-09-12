@@ -9,13 +9,13 @@ ul {
   padding: 0;
 }
 
-li {
-  width: 20%;
-  display: inline-block;
-  vertical-align: top;
+li img {
+  max-width: 80%;
+  height: auto;
 }
 
-li img {
-  max-width: 100%;
-  height: auto;
+.skill-item {
+  width: 10%;
+  display: inline-block;
+  vertical-align: top;
 }
