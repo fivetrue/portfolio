@@ -86,11 +86,12 @@
     <header class="masthead">
       <div class="container">
         <img class="img-circle" src="img/profile-circle.png" alt="Fivetrue">
-        <div class="skill-item">Fivetrue</div>
         <div class="intro-text">
+          <span class="name">Android Developer</span>
+          <div class="skill-item">Fivetrue</div>
+          <br>
           <span class="name">Skills</span>
           <hr class="star-light">
-          <span class="skills">Android Developer</span>
           <ul>
             <li class="loc-caption skill-item" title="Android Studio">
               <a href="https://developer.android.com/studio/index.html"><img id="android-tool" src="img/icon/android_studio.png" /></a>
@@ -114,8 +115,9 @@
               <a href="https://firebase.google.com/"><img id="android-firebase" src="img/icon/firebase.png" /></a>
             </li>
           </ul>
+          <span class="skills">Extra skills</span>
           <hr  class="star-light">
-          <span class="skills">Back-End Developer</span>
+          <span class="skills">Back-End</span>
           <ul>
             <li class="loc-caption skill-item" title="Eclipse">
               <a href="https://www.eclipse.org/"><img id="backend-tool" src="img/icon/eclipse.png" /></a>
@@ -136,8 +138,7 @@
               <a href="https://www.mysql.com/"><img id="backend-mysql" src="img/icon/mysql.png" /></a>
             </li>
           </ul>
-          <hr  class="star-light">
-          <span class="skills">Front-End Developer</span>
+          <span class="skills">Front-End</span>
           <ul>
             <li class="loc-caption skill-item" title="Eclipse">
               <a href="https://www.eclipse.org/"><img id="frontend-tool" src="img/icon/eclipse.png" /></a>
@@ -150,6 +151,9 @@
             </li>
             <li class="loc-caption skill-item" title="ReactiveX">
               <a href="http://reactivex.io/"><img id="frontend-rx" src="img/icon/rx.png" /></a>
+            </li>
+            <li class="loc-caption skill-item" title="Thymeleaf">
+              <a href="http://www.thymeleaf.org/"><img id="frontend-rx" src="img/icon/thymeleaf.png" /></a>
             </li>
             <li class="loc-caption skill-item" title="Firebase">
               <a href="https://firebase.google.com/"><img id="frontend-firebase" src="img/icon/firebase.png" /></a>
@@ -382,8 +386,23 @@
                   <img class="img-fluid img-centered" src="img/portfolio-img/vasset.png" alt="VASSET">
                   <p>LG, TINNO, ZTE 단말 제조사 대상으로 Nextreaming의 동영상 편집 Editor SDK가 판매되어 해당 SDK에사 사용 할 수 있는 편집 아이템 요소를 구매 할 수 있는 스토어 앱이다.</p>
                   <p>Google PlayStore에는 <a href="https://play.google.com/store/apps/details?id=com.nexstreaming.app.vasset.global">LGE</a>와 <a href="https://play.google.com/store/apps/details?id=com.nexstreaming.app.assetstore.tinno.global">TINNO</a> 에서 사용 할 수 있는 앱이 등록되어있다.</p>
-                  <p>Fivetrue 혼자 개발을 완료한 앱이며, 기본 UI에서 부터 Download와 Install Service, 고객사 Editor 간의 IPC 통신 (AIDL)까지 모두 개발하였다.</p>
-                  <span class="skills">Tool</span>
+                  <br>
+                  <p>개발자 단독으로 개발을 완료한 앱이며, 기본 UI에서 부터 Download와 Install Service, 고객사 Editor 간의 IPC 통신 (AIDL)까지 모두 개발하였다.</p>
+                  <br>
+                  <p>독립적으로 실행되지 않는 Hidden App이기 때문에 Launcher App에 노출되지 않으며, 반드시 LGE의 Video Editor 혹은 TINNO의 Video Editor에 의해 실행되어야 한다. </p>
+                  <br>
+                  <p><a href="https://developer.android.com/topic/libraries/data-binding/index.html">Android Databinding</a>이 익숙하지 않아 MVC,MVP 패턴을 이용해 디자인 되어있다.</p>
+                  <hr class="star-primary">
+                  <p>This is as Store Application for Nexstreaming's Editor SDK Customers LG, TINNO, ZTE. Users can download assets that is used editing by thier Editor Application</p>
+                  <p>Now published <a href="https://play.google.com/store/apps/details?id=com.nexstreaming.app.vasset.global">LGE</a> and <a href="https://play.google.com/store/apps/details?id=com.nexstreaming.app.assetstore.tinno.global">TINNO</a> to Google PlayStore.</p>
+                  <br>
+                  <p>This application was developed only one Developer. I made all of module Download to Install service even ICP (AIDL between Editor SDK)</p>
+                  <br>
+                  <p>It is not stand alone application. So it does not showing on Launcher App. And This Application must be launched Video editor of LGE or TINNO.</p>
+                  <br>
+                  <p>I am not used to <a href="https://developer.android.com/topic/libraries/data-binding/index.html">Android Databinding</a>. So used MVC,MVP pattern.</p>
+                  <hr class="star-primary">
+                  <h4>TOOL</h4>
                   <ul>
                     <li class="loc-caption skill-item" title="Android Studio">
                       <a href="https://developer.android.com/studio/index.html"><img id="android-tool" src="img/icon/android_studio.png" /></a>
@@ -392,19 +411,21 @@
                       <a href="https://gradle.org/"><img id="android-gradle" src="img/icon/gradle.png" /></a>
                     </li>
                   </ul>
-                  <span class="skills">Language</span>
+                  <h4>LANGUAGE</h4>
                   <ul>
                     <li class="loc-caption skill-item" title="JAVA">
                       <a href="https://java.com/"><img id="android-java" src="img/icon/java.png" /></a>
                     </li>
                   </ul>
-                  <span class="skills">Open Source</span>
+                  <h4>DATABASE</h4>
+                  <ul>
+                    <li class="loc-caption skill-item" title="Realm">
+                      <a href="https://realm.io/"><img id="android-realm" src="img/icon/realm.png" /></a>
+                  </ul>
+                  <h4>OPEN SOURCE</h4>
                   <ul>
                     <li class="loc-caption skill-item" title="ReactiveX">
                       <a href="http://reactivex.io/"><img id="android-rx" src="img/icon/rx.png" /></a>
-                    </li>
-                    <li class="loc-caption skill-item" title="Realm">
-                      <a href="https://realm.io/"><img id="android-realm" src="img/icon/realm.png" /></a>
                     </li>
                     <li class="loc-caption skill-item" title="Volley">
                       <a href="https://github.com/google/volley"><b>Volley</b></a>
@@ -413,24 +434,25 @@
                       <a href="https://github.com/bumptech/glide"><img id="android-glide" src="img/icon/glide.png" /></a>
                     </li>
                   </ul>
-
+                  <hr class="star-primary">
                   <ul class="list-inline item-details">
-                    <li>고객사:
-                      <strong>
+                    <li>
+                      <p>
+                        Client:
                         <a href="https://www.lge.co.kr">LGE</a>,
                         <a href="http://www.tinno.com/">TINNO</a>,
                         <a href="http://www.ztedevice.com/">ZTE</a>
-                      </strong>
+                      </p>
                     </li>
-                    <li>프로젝트 기간:
-                      <strong>
-                        <a href="http://startbootstrap.com">2016.12 ~ 진행 중</a>
-                      </strong>
+                    <li>
+                      <p>
+                        Date: 2016.12 ~ NOW</a>
+                      </p>
                     </li>
-                    <li>Service:
-                      <strong>
-                        <a href="http://startbootstrap.com">Web Development</a>
-                      </strong>
+                    <li>
+                      <p>
+                        <a href="https://developer.android.com/index.html">Android Application</a>
+                      </p>
                     </li>
                   </ul>
                   <button class="btn btn-success" type="button" data-dismiss="modal">
@@ -455,26 +477,21 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <h2>Project Title</h2>
+                  <h2>KINEMASTER</h2>
                   <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/cake.png" alt="">
+                  <img class="img-fluid img-centered" src="img/portfolio-img/kinemaster.png" alt="KINEMASTER">
                   <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
                     <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                   <ul class="list-inline item-details">
-                    <li>Client:
-                      <strong>
-                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                      </strong>
+                    <li>
+                      <p>
+                        프로젝트 기간: 2016.01 ~ 진행 중</a>
+                      </p>
                     </li>
-                    <li>Date:
-                      <strong>
-                        <a href="http://startbootstrap.com">April 2014</a>
-                      </strong>
-                    </li>
-                    <li>Service:
-                      <strong>
-                        <a href="http://startbootstrap.com">Web Development</a>
-                      </strong>
+                    <li>
+                      <p>
+                        <a href="https://developer.android.com/index.html">Android Application</a>
+                      </p>
                     </li>
                   </ul>
                   <button class="btn btn-success" type="button" data-dismiss="modal">
