@@ -28,7 +28,10 @@
 
     <title>Fivetrue's Portfolio</title>
     <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase-messaging.js"></script>
     <script>
       // Initialize Firebase
       var config = {
@@ -314,7 +317,7 @@
               <br>
               <div id="success"></div>
               <div class="form-group">
-                <button type="submit" class="btn btn-success btn-lg" id="sendMessageButton">Send</button>
+              <button type="submit" class="btn btn-success btn-lg" id="sendMessageButton">Send</button>
               </div>
             </form>
           </div>
@@ -801,6 +804,38 @@
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
 
-  </body>
+    <!-- Contact Firebase javascript-->
+    <script>
 
+      $("#contactForm").submit(function(){
+          firebase.database().goOnline();
+          var name = $("#name").val();
+          var email = $("#email").val();
+          var phone = $("#phone").val();
+          var message = $("#message").val();
+          if(name && email && phone && message){
+            var date = new Date();
+            var path = 'portfolio/contact/' + date.getMilliseconds();
+            var postContact = firebase.database().ref(path);
+            postContact.on('value', function(snapshot) {
+                alert("Your message has posted :)");
+                $("#name").val("");
+                $("#email").val("");
+                $("#phone").val("");
+                $("#message").val("");
+            });
+
+            firebase.database().ref(path).set({
+                name: name,
+                email: email,
+                phone : phone,
+                message : message,
+            });
+
+
+          }
+          return false;
+      });
+    </script>
+  </body>
 </html>
